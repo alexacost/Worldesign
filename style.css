@@ -1,5 +1,7 @@
 *{
     font-family: rubik !important;
+    margin: 0px;
+    padding: 0px;
 }
 .background {
     background: linear-gradient(212.33deg, #2B0B4E 0%, rgba(0, 0, 0, 0) 69.38%), linear-gradient(162.44deg, #AC267E 0%, #350C37 51.04%, #000007 100%);
@@ -45,4 +47,52 @@ line-height:30px;
     text-decoration-line: underline !important;
     color: #AC267E !important;
 
+}
+.stretch{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.5em;
+        margin-left: 1em;
+        margin-right: 1em;
+}
+.title-width{
+    width: 12em ;
+    text-align: center;
+    margin: 0px;
+    height: 1.5em;
+}
+img{
+    width:1.5em;
+    height: 1.5em;
+}
+h3 {
+    margin-top:2em;
+    margin-bottom: 1em;
+}
+
+h4{
+    margin-top:1em;
+    color:white;
+
+}
+
+ul{
+    margin-top: 2em !important;
+    color: white ;
+    list-style: none;
+}
+li{
+    padding-top: 1em !important;
+}
+li a { 
+    color:white !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+.menu{
+    background: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.25) !important;
 }
