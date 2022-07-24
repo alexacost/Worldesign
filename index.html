@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- links -->
     <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css">
     <link rel="stylesheet" href="jqm/themes/theme.css">
@@ -17,39 +21,75 @@
 <body>
     <body>
 
-        <!-- Start of first page -->
-        <div data-role="page" id="foo" class="background" >
+        <!-- registro -->
+        <div data-role="page" id="registro" class="background" >
         
             <div data-role="header" class="header">
                 <div class="center"><img src="assets/img/logoHeader.png" alt=""></div>
             </div><!-- /header -->
         
-            <div role="main" class="ui-content text">
+            <div role="main" class="ui-content">
                 <!-- Title -->
-                <h1>Registrate</h1>
-            </div><!-- /content -->
+                <h1 class="shadow-n">Registrate</h1>
+                <div class="shadow-n">
+                    <form>
+                        <!-- nombre -->
+                        <label for="text-1">Nombre</label>
+                        <input type="text" name="text-1" id="text-1" value="">
+                        <!-- apellido -->
+                        <label for="text-3">Apellido</label>
+                        <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+                        <!-- email -->
+                        <label for="email">Email</label>
+                        <input type="email" data-clear-btn="true" name="email" id="email" value="">
+                        <!-- contraseña -->
+                        <label for="password-1">Contraseña</label>
+                        <input type="password" data-clear-btn="true" name="password-1" id="password-1" value="">
+                    </form>
+                </div>
+                <a href="#home" class="ui-btn margin" style="text-shadow:none">Registrarse</a>
+            </div>
+            <!-- /content -->
         
-            <div data-role="footer">
-                <h4>Page Footer</h4>
-            </div><!-- /footer -->
-        </div><!-- /page -->
+            <div data-role="footer" class="header">
+                <p class="text-center shadow-n">¿Ya tenés una cuenta? <br> <a href="#ingreso" data-transition="flip" class="link">Ingresá</a></p>
+                
+            </div>
+            <!-- /footer -->
+        </div>
+        <!-- /registro -->
         
-        <!-- Start of second page -->
-        <div data-role="page" id="bar">
+        <!-- ingreso -->
+        <div data-role="page" id="ingreso" class="background" >
         
-            <div data-role="header">
-                <h1>Bar</h1>
+            <div data-role="header" class="header">
+                <div class="center"><img src="assets/img/logoHeader.png" alt=""></div>
             </div><!-- /header -->
         
             <div role="main" class="ui-content">
-                <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-                <p><a href="#foo">Back to foo</a></p>
-            </div><!-- /content -->
+                <!-- Title -->
+                <h1 class="shadow-n">Ingresá</h1>
+                <div class="shadow-n">
+                    <form>
+                        <!-- email -->
+                        <label for="email">Email</label>
+                        <input type="email" data-clear-btn="true" name="email" id="email" value="">
+                        <!-- contraseña -->
+                        <label for="password-1">Contraseña</label>
+                        <input type="password" data-clear-btn="true" name="password-1" id="password-1" value="">
+                    </form>
+                </div>
+                <a href="#home" class="ui-btn margin" style="text-shadow:none">Ingresar</a>
+            </div>
+            <!-- /content -->
         
-            <div data-role="footer">
-                <h4>Page Footer</h4>
-            </div><!-- /footer -->
-        </div><!-- /page -->
+            <div data-role="footer" class="header">
+                <p class="text-center shadow-n">¿No tenés una cuenta todavía? <br> <a href="#registro" data-transition="flip" class="link">Registrate</a></p>
+                
+            </div>
+            <!-- /footer -->
+        </div>
+        <!-- /ingreso-->
         </body>
     
 </body>

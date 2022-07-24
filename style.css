@@ -1,3 +1,6 @@
+*{
+    font-family: rubik !important;
+}
 .background {
     background: linear-gradient(212.33deg, #2B0B4E 0%, rgba(0, 0, 0, 0) 69.38%), linear-gradient(162.44deg, #AC267E 0%, #350C37 51.04%, #000007 100%);
 }
@@ -13,7 +16,33 @@
     justify-content: center;
     margin-top: 1.5em;
 }
-.text{
+.text-center{
     text-shadow: none;
     text-align: center;
+}
+.shadow-n {
+    text-shadow: none;
+}
+label {
+ margin-top: 1em !important;
+}
+
+.margin {
+    margin-top:2em !important;
+
+}
+p {
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 1em;
+line-height:30px;
+}
+.link{
+    background-color: transparent !important;
+    text-shadow: none !important;
+    border: none;
+    text-decoration-line: underline !important;
+    color: #AC267E !important;
+
 }
