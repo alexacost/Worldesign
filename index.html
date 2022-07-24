@@ -4,13 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="jqm/jquery.min.js">
-    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.js">
+    <!-- links -->
     <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="jqm/themes/theme.css">
+    <link rel="stylesheet" href="jqm/themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- scripts -->
+    <script src="jqm/jquery.min.js"></script>
+    <script src="jqm/jquery.mobile-1.4.5.js"></script>
     <title>Worldesign</title>
 </head>
 <body>
-    
+    <body>
+
+        <!-- Start of first page -->
+        <div data-role="page" id="foo" class="background" >
+        
+            <div data-role="header">
+                <h1>Logo</h1>
+            </div><!-- /header -->
+        
+            <div role="main" class="ui-content">
+                <p>I'm first in the source order so I'm shown as the page.</p>
+                <p>View internal page called <a href="#bar">bar</a></p>
+            </div><!-- /content -->
+        
+            <div data-role="footer">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+        
+        <!-- Start of second page -->
+        <div data-role="page" id="bar">
+        
+            <div data-role="header">
+                <h1>Bar</h1>
+            </div><!-- /header -->
+        
+            <div role="main" class="ui-content">
+                <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+                <p><a href="#foo">Back to foo</a></p>
+            </div><!-- /content -->
+        
+            <div data-role="footer">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+        </body>
     
 </body>
 </html>
