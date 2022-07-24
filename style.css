@@ -1,3 +1,19 @@
 .background {
     background: linear-gradient(212.33deg, #2B0B4E 0%, rgba(0, 0, 0, 0) 69.38%), linear-gradient(162.44deg, #AC267E 0%, #350C37 51.04%, #000007 100%);
 }
+.header{
+    background-color: transparent !important;
+    color:white !important;
+    text-shadow: none !important;
+    border: none !important;
+}
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+.text{
+    text-shadow: none;
+    text-align: center;
+}
