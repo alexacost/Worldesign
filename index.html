@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css" />
     <link rel="stylesheet" href="jqm/themes/theme.css" />
     <link rel="stylesheet" href="jqm/themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="detalles.css" />
+    <link rel="stylesheet" href="style.css" />
     <!-- scripts -->
     <script src="jqm/jquery.min.js"></script>
     <script src="jqm/jquery.mobile-1.4.5.js"></script>
@@ -156,7 +156,7 @@
         <div data-role="panel" data-display="overlay" class="menu" id="mypanel">
           <h4 class="shadow-n">Menú</h4>
           <ul class="shadow-n">
-            <li><a data-transition="flow" href="#home"> Proyectos </a></li>
+            <li><a data-transition="flow" href="#"> Proyectos </a></li>
             <li><a data-transition="flow" href="#about"> Nosotros </a></li>
             <li><a data-transition="flow"> Light theme </a></li>
             <li>
@@ -198,7 +198,7 @@
                 </p>
                 <a
                   data-transition="flow"
-                  href="#detalles"
+                  href="#projectDetail"
                   class="ui-btn margin"
                   style="text-shadow: none"
                   >Ver más</a
@@ -216,7 +216,7 @@
                 </p>
                 <a
                   data-transition="flow"
-                  href="#detalles"
+                  href="#projectDetail"
                   class="ui-btn margin"
                   style="text-shadow: none"
                   >Ver más</a
@@ -234,7 +234,7 @@
                 </p>
                 <a
                   data-transition="flow"
-                  href="#detalles"
+                  href="#projectDetail"
                   class="ui-btn margin"
                   style="text-shadow: none"
                   >Ver más</a
@@ -252,7 +252,7 @@
                 </p>
                 <a
                   data-transition="flow"
-                  href="#detalles"
+                  href="#projectDetail"
                   class="ui-btn margin"
                   style="text-shadow: none"
                   >Ver más</a
@@ -261,9 +261,78 @@
             </div>
           </div>
         </div>
-        <!-- /cards -->
       </div>
       <!-- /home-->
+
+      <!-- detail -->
+      <div data-role="page" id="projectDetail" class="background">
+        <!-- menu -->
+        <div data-role="panel" data-display="overlay" class="menu" id="mypanel">
+          <h4 class="shadow-n">Menú</h4>
+          <ul class="shadow-n">
+            <li><a data-transition="flow" href="#home"> Proyectos </a></li>
+            <li><a data-transition="flow" href="#about"> Nosotros </a></li>
+            <li><a data-transition="flow"> Light theme </a></li>
+            <li>
+              <a
+                data-transition="flow"
+                style="color: red !important"
+                href="#ingreso"
+              >
+                Cerrar sesión
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- menu -->
+        <div data-role="header" class="header">
+          <div class="stretch">
+            <a href="#mypanel" style="height: 1.5em"
+              ><img src="assets/img/menu.png" alt=""
+            /></a>
+            <h4 class="title-width">Proyectos</h4>
+            <img src="assets/img/LogoNotitle.png" alt="" />
+          </div>
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+          <!-- title -->
+          <div class="details-container">
+            <h3 class="shadow-n">Titulo del proyecto</h3>
+            <div class="details">
+              <div class="details-img">
+                <img src="assets/img/test-img.png" alt="" />
+              </div>
+            </div>
+            <p class="shadow-n">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eum
+              voluptate, numquam id qui ipsam maiores minus quisquam autem
+              inventore earum accusantium! Explicabo veritatis porro a itaque
+              fuga aliquam illum.
+            </p>
+            <h3 class="shadow-n">Deja tu comentario</h3>
+            <textarea
+              placeholder="Dejanos tu comentario"
+              class="textarea-height"
+            ></textarea>
+            <button class="ui-btn">Comentar</button>
+            <h3 class="shadow-n">Otros comentarios</h3>
+            <div class="comentarios-container shadow-n">
+              <p>
+                <span style="font-weight: 500">Nombre del usuario</span>, dice:
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laudantium quod quae voluptatem esse officia aliquid eius harum
+                placeat, quisquam cum obcaecati corrupti impedit minima unde
+                dignissimos quaerat autem est earum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /detail-->
 
       <!-- About -->
       <div data-role="page" id="about" class="background">
@@ -296,9 +365,7 @@
           </div>
         </div>
         <!-- /header -->
-
         <div role="main" class="ui-content">
-          <!-- /cards -->
           <div class="about-container">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam,
@@ -323,7 +390,6 @@
             </div>
           </div>
         </div>
-        <!-- /cards -->
       </div>
       <!-- /About-->
     </body>

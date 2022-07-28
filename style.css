@@ -192,6 +192,28 @@ li a {
     grid-gap: 10px;
   }
 }
+.details-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.details {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.details-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.textarea-height {
+  height: 11em !important;
+}
 
 @media (min-width: 650px) {
   .card-container {
